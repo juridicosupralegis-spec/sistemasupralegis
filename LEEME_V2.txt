@@ -1,0 +1,39 @@
+SISTEMA JURIDICO INTEGRAL - SUPRA LEGIS V2.0
+================================================
+
+Esta es la nueva versión "Premium" de su sistema de gestión jurídica.
+
+NOVEDADES DE LA VERSION 2.0:
+1. TABLERO DE CONTROL (DASHBOARD):
+   - Estadísticas en tiempo real.
+   - Accesos directos a "Carta Poder Rápida" y "Tribunal Virtual".
+
+2. AGENDA JUDICIAL:
+   - Calendario completo con alertas de Términos (Rojo), Audiencias (Azul) y Citas (Verde).
+
+3. CALCULADORA DE INTERESES (MERCANTIL):
+   - Liquidaciones exactas con interés simple.
+   - Genera tabla de resultados para copiar y pegar.
+
+4. RECIBOS DE HONORARIOS:
+   - Generación automática de PDF.
+   - Historial de recibos emitidos.
+
+5. NUEVOS ESCRITOS JURIDICOS:
+   - Compraventa Vehicular + Carta Responsiva.
+   - Arrendamiento (Casa Habitación + Cláusula Desocupación).
+   - Pagaré y Endosos (LGTOC).
+
+6. ESTETICA PREMIUM:
+   - Nuevo diseño oscuro profesional (Legal Tech).
+   - Modo "Glassmorphism" y colores elegantes.
+
+INSTRUCCIONES DE MIGRACION:
+---------------------------
+Para mover todo este sistema a su propia carpeta limpia en el Escritorio:
+1. Busque el archivo "MIGRAR_A_V2.bat" en esta misma carpeta.
+2. Dele doble clic.
+3. Se creará automáticamente la carpeta "SistemaSupraLegis_V2" en su escritorio con todo listo.
+
+Soporte Técnico: Supra Legis Inc.
+Fecha: 12/Febrero/2026

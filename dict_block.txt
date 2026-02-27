@@ -1,0 +1,393 @@
+﻿    const DICCIONARIO_JURIDICO = {
+        "abintestato": "Procedimiento judicial sobre la herencia y la adjudicación de los bienes de quien muere sin testar o con testamento nulo.",
+        "abogado": "Licenciado en derecho que ofrece profesionalmente asesoramiento jurídico y ejerce la defensa de las partes en los procesos judiciales.",
+        "absolución": "Sentencia de un juez o de un tribunal que declara inocente a un acusado o libre a un demandado.",
+        "acción": "Facultad de acudir ante un órgano jurisdiccional para pedir la resolución de un conflicto.",
+        "acreedor": "Persona que tiene derecho a pedir el cumplimiento de una obligación, especialmente a que se le pague una deuda.",
+        "acta": "Documento oficial en el que se relata lo sucedido en una reunión, juicio o hecho.",
+        "actor": "Persona que demanda en un proceso civil.",
+        "adeudo": "Deuda que alguien tiene con otra persona o entidad.",
+        "adjudicación": "Acto por el cual un órgano competente atribuye la propiedad de un bien a una persona.",
+        "agravio": "Perjuicio que se causa a una persona en sus derechos o intereses.",
+        "alegato": "Escrito o exposición oral que presenta un abogado para defender los derechos de su cliente.",
+        "alzada": "Recurso que se interpone ante el superior jerárquico del órgano que dictó una resolución.",
+        "amparo": "Procedimiento legal para la protección de los derechos constitucionales del ciudadano.",
+        "apelación": "Recurso por el cual se solicita a un tribunal superior que anule o enmiende una sentencia dictada por uno inferior.",
+        "apremiar": "Obligar a alguien, mediante mandamiento judicial, a que haga algo con prontitud.",
+        "arbitraje": "Método de resolución de conflictos en el que las partes acuerdan someterse a la decisión de un tercero.",
+        "arrendador": "Persona que da algo en arrendamiento.",
+        "arrendatario": "Persona que toma algo en arrendamiento.",
+        "atenuante": "Circunstancia que disminuye el grado de responsabilidad penal.",
+        "audiencia": "Acto en el que un juez o tribunal escucha a las partes para decidir sobre un asunto.",
+        "auto": "Resolución judicial motivada que decide cuestiones secundarias o previas en un proceso.",
+        "autonomía": "Facultad de una entidad para gobernarse por sus propias leyes.",
+        "aval": "Garantía que una persona presta a favor de otra para asegurar el cumplimiento de una obligación.",
+        "beneficiario": "Persona que tiene derecho a recibir un beneficio o prestación.",
+        "buena fe": "Principio general del derecho que consiste en el estado mental de honradez y convicción en cuanto a la verdad o rectitud de un acto.",
+        "caducidad": "Extinción de un derecho o una acción por el transcurso del tiempo.",
+        "capacidad": "Aptitud de una persona para ser titular de derechos y obligaciones y para ejercerlos.",
+        "careo": "Diligencia procesal en la que se confronta a dos personas que han prestado declaraciones contradictorias.",
+        "carga de la prueba": "Obligación que tiene una de las partes en un juicio de probar los hechos que afirma.",
+        "carta poder": "Documento privado por el cual una persona autoriza a otra para que realice trámites en su nombre.",
+        "casación": "Recurso extraordinario que tiene por objeto anular una sentencia definitiva.",
+        "causa": "Motivo o fundamento que da origen a un proceso judicial o a una obligación.",
+        "cédula": "Documento oficial que acredita la identidad de una persona o una notificación judicial.",
+        "citación": "Acto por el cual se ordena a una persona comparecer ante una autoridad en un lugar y día determinados.",
+        "cláusula": "Cada una de las disposiciones de un contrato o testamento.",
+        "coacción": "Fuerza o violencia que se ejerce sobre una persona para obligarla a hacer algo.",
+        "código": "Conjunto sistemático de leyes que regulan una materia determinada.",
+        "cognición": "Conocimiento de un asunto por parte de un juez o tribunal.",
+        "cohecho": "Delito cometido cuando un funcionario público solicita o acepta una dádiva a cambio de un acto relacionado con su cargo.",
+        "colusión": "Pacto ilícito entre dos o más personas para causar perjuicio a un tercero.",
+        "comparecencia": "Acto de presentarse ante una autoridad judicial o administrativa.",
+        "competencia": "Facultad de un juez o autoridad para conocer de un asunto determinado.",
+        "concesión": "Acto administrativo por el cual el Estado otorga a un particular el derecho de explotar un bien o servicio público.",
+        "conciliación": "Acuerdo entre las partes para evitar un pleito o poner fin a uno ya iniciado.",
+        "condonación": "Perdón o remisión de una deuda por parte del acreedor.",
+        "confección": "Elaboración de un documento o contrato.",
+        "confesión": "Declaración por la cual una persona reconoce un hecho que le es desfavorable.",
+        "connivencia": "Disimulo o tolerancia en la culpa de otro.",
+        "consejo": "Órgano consultivo o de gobierno.",
+        "consenso": "Acuerdo producido por consentimiento de todos los miembros de un grupo o entre varias partes.",
+        "consentimiento": "Manifestación de la voluntad conforme entre las partes.",
+        "consignación": "Depósito judicial de la cosa o cantidad debida.",
+        "constitucional": "Perteneciente o relativo a la constitución de un Estado.",
+        "contencioso": "Asunto sometido a decisión judicial por existir conflicto entre las partes.",
+        "contrato": "Acuerdo de voluntades que crea o transmite derechos y obligaciones.",
+        "contravención": "Infracción de una ley, contrato o norma.",
+        "costas": "Gastos procesales originados por un juicio.",
+        "cuaderno": "Cada una de las secciones en que se divide un expediente judicial.",
+        "cuantía": "Valor económico de un asunto litigioso.",
+        "culpable": "Persona a la que se le imputa la responsabilidad de un delito o falta.",
+        "daños y perjuicios": "Compensación económica por el menoscabo sufrido en el patrimonio o en la persona.",
+        "dación": "Acto de dar o entregar algo.",
+        "demandado": "Persona contra la que se interpone una demanda.",
+        "demandante": "Persona que interpone una demanda.",
+        "denuncia": "Acto por el cual se pone en conocimiento de la autoridad la comisión de un hecho presuntamente delictivo.",
+        "deposición": "Declaración de un testigo en un proceso judicial.",
+        "depósito": "Contrato por el cual se recibe una cosa ajena con la obligación de guardarla y restituirla.",
+        "derecho": "Conjunto de normas que regulan la conducta humana y permiten resolver conflictos.",
+        "desacato": "Infracción cometida al faltar al respeto a una autoridad.",
+        "desahogo": "Presentación o realización de las pruebas en un juicio.",
+        "desahucio": "Acto de desalojar a un inquilino de una finca por falta de pago o fin del contrato.",
+        "desistimiento": "Abandono de una acción, derecho o proceso.",
+        "detención": "Privación provisional de libertad por orden judicial o policial.",
+        "dictamen": "Opinión técnica emitida por un perito sobre una materia.",
+        "diligencia": "Acto procesal realizado por un juez o funcionario de justicia.",
+        "dolo": "Voluntad deliberada de cometer un delito o de incumplir una obligación.",
+        "domicilio": "Lugar de residencia física de una persona.",
+        "donación": "Contrato por el cual una persona transfiere a otra, gratuitamente, una parte o la totalidad de sus bienes.",
+        "edictal": "Publicación obligatoria de un acto judicial mediante edictos.",
+        "ejecución": "Fase del proceso en la que se da cumplimiento a lo ordenado en la sentencia.",
+        "ejecutoria": "Sentencia firme que ya no admite recurso alguno.",
+        "embargo": "Retención de bienes por orden judicial para asegurar el pago de una deuda.",
+        "emancipación": "Acto por el que se libera a un menor de la patria potestad o tutela.",
+        "emplazamiento": "Notificación por la cual se fija un plazo para comparecer o realizar un acto procesal.",
+        "enajenación": "Transferencia del dominio de una cosa a otra persona.",
+        "endoso": "Declaración puesta detrás de un título valor para transmitirlo.",
+        "enfiteusis": "Censo o contrato por el cual se cede el dominio útil de una finca a cambio de un canon anual.",
+        "error": "Falso conocimiento o valoración de un hecho o norma jurídica.",
+        "escrito": "Documento presentado por las partes ante el juez.",
+        "escritura": "Documento público otorgado ante notario.",
+        "estado civil": "Situación jurídica de una persona en relación con su familia y la sociedad (soltero, casado, etc.).",
+        "estupro": "Delito consistente en tener acceso carnal con una persona valiéndose del engaño.",
+        "evicción": "Pérdida de un derecho por sentencia firme y en virtud de un derecho anterior ajeno.",
+        "exención": "Privilegio que libera a alguien de una carga u obligación.",
+        "exhorto": "Comunicación de un juez a otro de igual jerarquía para que realice una diligencia.",
+        "expediente": "Conjunto de todos los documentos y actuaciones relativos a un asunto judicial.",
+        "extinción": "Cese de un derecho, obligación o relación jurídica.",
+        "extradición": "Entrega de una persona refugiada en un país a las autoridades de otro que la reclama.",
+        "falta": "Infracción de la ley de menor gravedad que un delito.",
+        "fallo": "Parte dispositiva de una sentencia.",
+        "fianza": "Garantía personal para asegurar el cumplimiento de una obligación.",
+        "filiación": "Relación jurídica que une a los hijos con sus padres.",
+        "fiscalía": "Órgano encargado de la investigación de delitos y ejercicio de la acción penal.",
+        "folio": "Hoja de un libro o expediente.",
+        "fraude": "Engaño económico con ánimo de lucro.",
+        "fuerza mayor": "Acontecimiento imprevisible e inevitable que libera de responsabilidad.",
+        "garante": "Persona que da garantía o fianza.",
+        "gravamen": "Carga o impuesto que pesa sobre un bien o propiedad.",
+        "hábeas corpus": "Derecho de todo detenido a ser llevado ante un juez para que decida sobre la legalidad de su arresto.",
+        "herencia": "Conjunto de bienes, derechos y obligaciones que se transmiten por causa de muerte.",
+        "hipoteca": "Derecho real que garantiza el cumplimiento de una obligación sobre bienes inmuebles.",
+        "hurto": "Apoderamiento de cosa ajena sin violencia ni intimidación.",
+        "idóneo": "Que tiene aptitud para algo.",
+        "ignominia": "Deshonor o descrédito público.",
+        "impugnación": "Acto de combatir la validez de un documento o resolución.",
+        "imputación": "Atribución de un delito a una persona.",
+        "incidente": "Cuestión que surge durante un proceso y debe ser resuelta antes de la sentencia principal.",
+        "incumplimiento": "Falta de ejecución de lo pactado o mandado.",
+        "indemnización": "Compensación económica por un daño causado.",
+        "indiciado": "Persona sobre la que existen indicios de haber cometido un delito.",
+        "indulto": "Gracia por la cual se perdona total o parcialmente una pena.",
+        "infractor": "Persona que quebranta una ley o norma.",
+        "inhibitoria": "Planteamiento ante un juez reclamando que deje de conocer un asunto por incompetencia.",
+        "injuria": "Agravio u ofensa que lesiona la dignidad de una persona.",
+        "inmueble": "Bien que no puede trasladarse por sí mismo ni ser trasladado.",
+        "instancia": "Grado jurisdiccional en que se tramita un juicio.",
+        "interdicto": "Procedimiento sumario para decidir sobre la posesión de una cosa.",
+        "interés moratorio": "Interés que se paga por el retraso en el cumplimiento de una obligación.",
+        "intestado": "Persona que muere sin dejar testamento válido.",
+        "irretroactividad": "Principio por el cual la ley nueva no se aplica a hechos ocurridos antes de su entrada en vigor.",
+        "juez": "Persona con autoridad para juzgar y sentenciar.",
+        "juicio": "Proceso judicial ante un juez o tribunal.",
+        "jurisdicción": "Poder o autoridad para juzgar y aplicar las leyes.",
+        "jurisprudencia": "Criterio constante y uniforme de los tribunales en la aplicación de las leyes.",
+        "jurado": "Grupo de ciudadanos que participan en la administración de justicia.",
+        "justicia": "Principio moral que inclina a obrar y juzgar respetando la verdad y dando a cada uno lo que le corresponde.",
+        "juzgado": "Órgano judicial unipersonal.",
+        "lanzamiento": "Acto de ejecutar un desahucio.",
+        "legado": "Disposición testamentaria a título particular.",
+        "legatario": "Persona que recibe un legado.",
+        "legitimación": "Aptitud para ser parte en un proceso determinado.",
+        "lesión": "Daño o detrimento corporal o patrimonial.",
+        "ley": "Norma jurídica dictada por la autoridad competente.",
+        "licitación": "Procedimiento para adjudicar un contrato mediante ofertas públicas.",
+        "litigio": "Pleito o disputa judicial.",
+        "litigante": "Persona que es parte en un juicio.",
+        "lucro cesante": "Ganancia que se deja de obtener por un acto ilícito o incumplimiento.",
+        "magistrado": "Miembro de un tribunal superior de justicia.",
+        "mala fe": "Actuación con dolo o intención de engañar.",
+        "mandamiento": "Orden escrita dictada por un juez.",
+        "mandato": "Contrato por el cual una persona encomienda a otra la gestión de uno o más negocios.",
+        "manifestación": "Declaración voluntaria de hechos o voluntad.",
+        "mediación": "Intervención de un tercero para ayudar a las partes a llegar a un acuerdo.",
+        "medida cautelar": "Disposición adoptada para asegurar el resultado de un juicio.",
+        "mercantil": "Perteneciente o relativo al comercio o a los mercaderes.",
+        "ministerio público": "Órgano del Estado encargado de representar los intereses de la sociedad.",
+        "mora": "Retraso culpable en el cumplimiento de una obligación.",
+        "notificación": "Acto de comunicar formalmente una resolución.",
+        "notario": "Funcionario público que da fe de los actos y contratos.",
+        "nulidad": "Carencia de valor legal de un acto jurídico.",
+        "obiter dicta": "Opinión expresada por un juez que no es esencial para la decisión del caso.",
+        "obligación": "Vínculo jurídico que nos constriñe a pagar o hacer algo.",
+        "oficio": "Documento oficial de comunicación administrativa o judicial.",
+        "oneroso": "Contrato que implica cargas recíprocas para las partes.",
+        "ordenanza": "Norma dictada por una autoridad administrativa.",
+        "pacto": "Acuerdo o tratado entre dos o más personas o entidades.",
+        "pago": "Cumplimiento de una obligación de dar una cantidad de dinero.",
+        "papel sellado": "Papel oficial de uso obligatorio en ciertos documentos jurídicos.",
+        "pariente": "Persona que tiene relación de parentesco con otra.",
+        "parte": "Cada una de las personas que intervienen en un negocio jurídico o pleito.",
+        "patrimonio": "Conjunto de bienes y derechos pertenecientes a una persona.",
+        "patria potestad": "Derechos y deberes de los padres sobre sus hijos menores.",
+        "pena": "Sanción impuesta por ley a quien comete un delito.",
+        "perentorio": "Plazo que es último y no se puede prorrogar.",
+        "peritaje": "Informe realizado por un experto sobre una materia.",
+        "perito": "Persona experta en una ciencia, arte u oficio.",
+        "perjuicio": "Daño causado a una persona o a sus bienes.",
+        "personería": "Facultad de representar a otra persona en juicio o fuera de él.",
+        "pignoración": "Acto de dar algo en prenda.",
+        "plazo": "Tiempo fijado para realizar un acto.",
+        "pleito": "Contienda judicial entre partes.",
+        "pliego": "Documento que contiene condiciones o preguntas.",
+        "pobreza": "Situación que permite litigar sin gastos si se carece de medios.",
+        "poder": "Documento que otorga representación legal.",
+        "posesión": "Poder de hecho que se ejerce sobre una cosa.",
+        "precedente": "Decisión judicial previa que sirve de guía para casos futuros.",
+        "preclusión": "Pérdida de una facultad procesal por no haberse ejercido en tiempo.",
+        "prenda": "Derecho real de garantía sobre bienes muebles.",
+        "prescripción": "Adquisición o pérdida de un derecho por el transcurso del tiempo.",
+        "presunción": "Deducción de un hecho desconocido a partir de uno conocido.",
+        "pretensión": "Lo que una parte solicita en su demanda.",
+        "procedimiento": "Forma y orden de las actuaciones en un proceso.",
+        "proceso": "Sucesión de actos dirigidos a la resolución de un conflicto por un juez.",
+        "procurador": "Representante procesal de las partes.",
+        "promover": "Iniciar o impulsar un trámite judicial.",
+        "promulgar": "Publicar oficialmente una ley.",
+        "prueba": "Medio para convencer al juez de la veracidad de los hechos.",
+        "queja": "Recurso contra la inadmisión de otro recurso o por omisiones del juez.",
+        "querella": "Acto por el cual un particular ejercita la acción penal como parte.",
+        "quid pro quo": "Sustitución de una cosa por otra.",
+        "ratificación": "Confirmación de un acto realizado previamente.",
+        "rebeldía": "Situación del demandado que no comparece en el proceso.",
+        "recisión": "Extinción de un contrato por lesión o causa legal.",
+        "reconvención": "Contrademanda que el demandado interpone contra el actor.",
+        "recurso": "Medio de impugnación de las resoluciones judiciales.",
+        "recusación": "Acto de pedir que un juez no intervenga por duda de su imparcialidad.",
+        "redención": "Liberación de una carga u obligación.",
+        "reglamento": "Norma de rango inferior a la ley dictada por la administración.",
+        "reivindicación": "Acción para recuperar la propiedad de una cosa.",
+        "remate": "Subasta pública de bienes embargados.",
+        "reparación": "Acción de remediar un daño causado.",
+        "reposición": "Recurso ante el mismo juez que dictó la resolución.",
+        "representación": "Actuar en nombre y por cuenta de otro.",
+        "requerimiento": "Notificación imperativa para que alguien haga o deje de hacer algo.",
+        "resolución": "Decisión de un juez o autoridad.",
+        "responsabilidad": "Obligación de reparar el daño causado por un hecho propio o ajeno.",
+        "restauración": "Restablecimiento de una situación anterior.",
+        "retracto": "Derecho de adquirir una cosa vendida a un tercero.",
+        "retroactividad": "Aplicación de la ley nueva a hechos pasados.",
+        "revocación": "Acto de dejar sin efecto una resolución o mandato anterior.",
+        "robo": "Apoderamiento de cosa ajena con violencia o intimidación.",
+        "sala": "Cada una de las secciones en que se divide un tribunal superior.",
+        "saneamiento": "Obligación del vendedor de garantizar la posesión legal y pacífica de la cosa.",
+        "sanción": "Castigo impuesto por el incumplimiento de una norma.",
+        "secretario": "Funcionario judicial que da fe de las actuaciones.",
+        "secuestro": "Depósito judicial de bienes en litigio.",
+        "sentencia": "Resolución definitiva de un juez o tribunal que pone fin al proceso.",
+        "servidumbre": "Carga impuesta sobre un inmueble en beneficio de otro.",
+        "siniestro": "Acontecimiento que causa un daño cubierto por un seguro.",
+        "soborno": "Acción de corromper a alguien con dádivas.",
+        "sobreseimiento": "Resolución que suspende o pone fin a un proceso sin decidir sobre el fondo.",
+        "sugeto": "Persona que es titular de derechos u obligaciones.",
+        "suerte principal": "Monto original de una deuda sin incluir intereses ni gastos.",
+        "sumario": "Procedimiento judicial rápido o fase de instrucción en lo penal.",
+        "supletorio": "Que sirve para suplir la falta de algo.",
+        "suspender": "Detener temporalmente un proceso o ejecución.",
+        "tacha": "Causa para invalidar o dudar de la declaración de un testigo.",
+        "tasa": "Tributo que se paga por el uso de un servicio público.",
+        "término": "Plazo fijado para realizar un acto procesal.",
+        "testador": "Persona que hace testamento.",
+        "testamento": "Acto por el cual una persona dispone de sus bienes para después de su muerte.",
+        "testigo": "Persona que declara sobre hechos que conoce.",
+        "título": "Documento que acredita un derecho o propiedad.",
+        "tradición": "Entrega de la cosa con intención de transmitir la propiedad.",
+        "trámite": "Cada uno de los pasos de un proceso administrativo o judicial.",
+        "transacción": "Contrato por el cual las partes terminan una controversia mediante concesiones recíprocas.",
+        "traslado": "Acto de dar conocimiento a una parte de lo pedido por la otra.",
+        "tribunal": "Órgano pluripersonal encargado de impartir justicia.",
+        "tutela": "Autoridad conferida para cuidar de la persona y bienes de un menor o incapacitado.",
+        "usucapión": "Adquisición de la propiedad por la posesión continuada en el tiempo.",
+        "usura": "Cobro de intereses excesivos.",
+        "usufructo": "Derecho a disfrutar de bienes ajenos con la obligación de conservarlos.",
+        "vacatio legis": "Plazo entre la publicación de una ley y su entrada en vigor.",
+        "validez": "Cualidad de un acto que reúne los requisitos legales.",
+        "vencimiento": "Fecha en que se hace exigible una obligación.",
+        "venia": "Licencia o permiso de una autoridad.",
+        "veredicto": "Decisión del jurado sobre los hechos.",
+        "vía de apremio": "Procedimiento para la ejecución forzosa de una sentencia.",
+        "vicio": "Defecto que anula o disminuye la validez de un acto.",
+        "vigencia": "Cualidad de la ley o norma que está en vigor.",
+        "vínculo": "Relación jurídica entre personas.",
+        "vista": "Acto oral de un proceso judicial.",
+        "viuda": "Mujer que ha perdido a su esposo.",
+        "vocación": "Llamamiento a los herederos a una sucesión.",
+        "voluntad": "Consentimiento o intención de realizar un acto.",
+        "voto": "Manifestación de la opinión o voluntad en una decisión colectiva.",
+        "yacente": "Situación de la herencia desde la muerte del causante hasta su aceptación.",
+        "zona": "Ámbito territorial de una jurisdicción."
+    };
+
+    window.filtrarDiccionario = () => {
+        const query = document.getElementById('searchDiccionario').value.toLowerCase().trim();
+        const container = document.getElementById('diccionarioResult');
+        container.innerHTML = '';
+
+        if (!query) {
+            container.innerHTML = `
+                <div class="empty-state">
+                    <span class="material-icons-round" style="font-size: 4rem; color: #ddd;">search</span>
+                    <p>Escribe una palabra para buscar su significado legal.</p>
+                </div>`;
+            return;
+        }
+
+        const matches = Object.keys(DICCIONARIO_JURIDICO).filter(k => k.includes(query));
+
+        if (matches.length === 0) {
+            container.innerHTML = `
+                <div class="empty-state">
+                    <span class="material-icons-round" style="font-size: 4rem; color: #ddd;">sentiment_dissatisfied</span>
+                    <p>No se encontró el término "${query}". <br> Prueba buscando en la RAE.</p>
+                </div>`;
+            return;
+        }
+
+        matches.forEach(key => {
+            const item = document.createElement('div');
+            item.className = 'diccionario-item';
+            item.innerHTML = `
+                <h4>${key}</h4>
+                <p>${DICCIONARIO_JURIDICO[key]}</p>
+            `;
+            container.appendChild(item);
+        });
+    };
+
+    window.buscarEnRAE = () => {
+        const query = document.getElementById('searchDiccionario').value.trim();
+        if (query) {
+            window.open(`https://dpej.rae.es/lema/${query}`, '_blank');
+        } else {
+            window.open(`https://dpej.rae.es/`, '_blank');
+        }
+    };
+
+    window.limpiarCorrector = () => {
+        document.getElementById('correctorText').value = '';
+        document.getElementById('correctorResults').style.display = 'none';
+        document.getElementById('correctorStats').textContent = '0 palabras | 0 errores detectados';
+    };
+
+    window.verificarTexto = () => {
+        const text = document.getElementById('correctorText').value;
+        const resultArea = document.getElementById('correctorResults');
+        const sugerenciasList = document.getElementById('sugerenciasList');
+        const stats = document.getElementById('correctorStats');
+
+        if (!text.trim()) return alert('Por favor, ingresa un texto para verificar.');
+
+        const words = text.split(/[\s,.;:!?()"]+/).filter(w => w.length > 3);
+        const uniqueWords = [...new Set(words)];
+        const errors = [];
+
+        uniqueWords.forEach(word => {
+            const cleanWord = word.toLowerCase().trim();
+            // Simple logic: if contains non-spanish typical chars or is rare but sounds juridical and misspelled
+            // We check against our local dictionary for "Critical Legal Terms"
+            // For general spelling, we rely on the browser's red underline (spellcheck=true)
+            // But here we provide specific legal suggestions
+
+            // Check for common typos in legal words
+            for (let term in DICCIONARIO_JURIDICO) {
+                if (levenshteinDistance(cleanWord, term) === 1 && cleanWord !== term) {
+                    errors.push({ original: word, suggestion: term });
+                    break;
+                }
+            }
+        });
+
+        stats.textContent = `${words.length} palabras analizadas | ${errors.length} sugerencias legales`;
+
+        if (errors.length > 0) {
+            resultArea.style.display = 'block';
+            sugerenciasList.innerHTML = '';
+            errors.forEach(err => {
+                const item = document.createElement('div');
+                item.style.padding = '5px';
+                item.style.borderBottom = '1px solid #eee';
+                item.innerHTML = `¿Quiso decir <strong style="color:var(--primary); cursor:pointer" onclick="reemplazarPalabra('${err.original}', '${err.suggestion}')">${err.suggestion}</strong> en lugar de "${err.original}"?`;
+                sugerenciasList.appendChild(item);
+            });
+        } else {
+            resultArea.style.display = 'none';
+            alert('No se encontraron faltas de ortografía en los términos jurídicos principales. \n\nRecuerde que el navegador también marcará palabras genéricas en rojo si detecta errores.');
+        }
+    };
+
+    window.reemplazarPalabra = (oldW, newW) => {
+        const area = document.getElementById('correctorText');
+        area.value = area.value.replace(new RegExp(oldW, 'g'), newW);
+        verificarTexto();
+    };
+
+    function levenshteinDistance(a, b) {
+        if (a.length === 0) return b.length;
+        if (b.length === 0) return a.length;
+        const matrix = [];
+        for (let i = 0; i <= b.length; i++) matrix[i] = [i];
+        for (let j = 0; j <= a.length; j++) matrix[0][j] = j;
+        for (let i = 1; i <= b.length; i++) {
+            for (let j = 1; j <= a.length; j++) {
+                if (b.charAt(i - 1) === a.charAt(j - 1)) {
+                    matrix[i][j] = matrix[i - 1][j - 1];
+                } else {
+                    matrix[i][j] = Math.min(matrix[i - 1][j - 1] + 1, Math.min(matrix[i][j - 1] + 1, matrix[i - 1][j] + 1));
+                }
+            }
+        }
+        return matrix[b.length][a.length];
+    }
+
+

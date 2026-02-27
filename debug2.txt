@@ -1,0 +1,27 @@
+﻿ead>
+                        <tbody id="recibosList">
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- MODULE 6: DICCIONARIO JURIDICO COMPLETO -->
+            <section id="diccionario" class="module">
+                <div class="header-bar">
+                    <h2 class="module-title">Diccionario &amp; Herramientas Juridicas</h2>
+                </div>
+
+                <!-- PESTANAS -->
+                <div style="display:flex;gap:8px;margin-bottom:20px;flex-wrap:wrap;">
+                    <button id="tab-def" class="btn btn-primary btn-small" onclick="showDicTab('definiciones')">Definiciones</button>
+                    <button id="tab-sin" class="btn btn-outline btn-small" onclick="showDicTab('sinonimos')">Sinonimos Juridicos</button>
+                    <button id="tab-fra" class="btn btn-outline btn-small" onclick="showDicTab('frases')">Frases de Redaccion</button>
+                    <button id="tab-cor" class="btn btn-outline btn-small" onclick="showDicTab('corrector')">Corrector Ortografico</button>
+                    <button id="tab-lex" class="btn btn-outline btn-small" onclick="showDicTab('lexico')">Lexico Correcto</button>
+                </div>
+
+                <!-- TAB 1: DEFINICIONES -->
+                <div id="tab-content-definiciones">
+                    <div class="panel">
+                        <div style="display:flex;gap:12px;margin-bottom:18px;align-items:center;">
+   

@@ -1,0 +1,6 @@
+﻿<div><label>Días Trab. / Semana</label><input type="number" id="lab_dias_semana"
+                                placeholder="1-7 (Default 6)" min="1" max="7"></div>
+
+                        <!-- CUSTOM CONFIG -->
+                        <div
+            

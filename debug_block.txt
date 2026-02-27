@@ -1,0 +1,55 @@
+﻿le>
+                </div>
+                <!-- MODULE 6: DICCIONARIO Y CORRECTOR -->
+                <section id="diccionario" class="module">
+                    <div class="header-bar">
+                        <h2 class="module-title">Diccionario & Corrector Jurídico</h2>
+                    </div>
+
+                    <div class="panel">
+                        <div style="display: flex; gap: 15px; margin-bottom: 20px;">
+                            <input type="text" id="searchDiccionario" class="form-control"
+                                placeholder="Buscar término jurídico (ej. Abintestato, Enfiteusis...)"
+                                onkeyup="filtrarDiccionario()">
+                            <button class="btn btn-primary" onclick="buscarEnRAE()">
+                                <span class="material-icons-round">language</span> RAE
+                            </button>
+                        </div>
+
+                        <div id="diccionarioResult" class="diccionario-grid">
+                            <!-- JS Injection -->
+                            <div class="empty-state">
+                                <span class="material-icons-round" style="font-size: 4rem; color: #ddd;">search</span>
+                                <p>Escribe una palabra para buscar su significado legal.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel" style="margin-top: 20px; border-top: 4px solid var(--accent);">
+                        <h3 style="margin-top: 0;">Corrector Ortográfico Legal</h3>
+                        <p style="font-size: 0.9rem; color: var(--text-sec); margin-bottom: 15px;">
+                            Pega tu texto aquí para verificar la ortografía de términos jurídicos y evitar sugerencias
+                            en inglés.
+                        </p>
+                        <textarea id="correctorText" class="form-control" rows="10"
+                            placeholder="Escribe o pega el texto de tu escrito aquí..." lang="es" spellcheck="true"
+                            style="font-family: 'Times New Roman', serif; font-size: 1.1rem;"></textarea>
+
+                        <div
+                            style="margin-top: 15px; display: flex; justify-content: space-between; align-items: center;">
+                            <div id="correctorStats" style="font-size: 0.85rem; color: var(--text-sec);">
+                                0 palabras | 0 errores detectados
+                            </div>
+                            <div style="display: flex; gap: 10px;">
+                                <button class="btn btn-outline" onclick="limpiarCorrector()">Limpiar</button>
+                                <button class="btn btn-accent" onclick="verificarTexto()">Verificar Ortografía
+                                    Legal</button>
+                            </div>
+                        </div>
+
+                        <div id="correctorResults"
+                            style="margin-top: 20px; display: none; padding: 15px; background: #fff8f8; border-radius: 8px; border: 1px solid #f8d7da;">
+                            <h4 style="margin: 0 0 10px 0; color: #721c24;">Sugerencias y Correcciones:</h4>
+                            <div id="sugerenciasList" style="display: flex; flex-direction: column; gap: 8px;"></div>
+                        </div>
+                    
